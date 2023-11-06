@@ -33,6 +33,16 @@ $ npm install
 $ docker compose up
 ```
 
+## DB Indexing
+
+```bash
+$ CREATE INDEX idx_cities_id ON cities (id);
+
+$ CREATE INDEX idx_cities_name ON cities (name);
+
+$ CREATE INDEX idx_residents_city_id ON residents (city_id);
+```
+
 ## Running the app
 
 ```bash
